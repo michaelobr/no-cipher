@@ -1,2 +1,7 @@
-# no-cipher
-Text cipher using random words instead of repeatable patterns. 
+# Introduction
+Ciphers are only as powerful as their complexity. For example, given 26 unique positions in the alphabet, a simple cipher could mean moving every letter two letters in either direction. So a word such as "zyaml" would become "bacon." This is also a good example of continuity, that "z" = "b", once the end of the alphabet is reached, simply go back to the beginning. The same applies if you are going backwards. The problem however with this type of ciphering, is that the cipher itself is simply a pattern, and patterns can be easily found. That is why in this program, I instead opted for a random cipher, meaning there is no specific pattern such as letter +- 2.  
+# TODO List
+1) Perform proper cipher translations. For example, as the program currently operates, if the word "television" is encrypted to "sock", the program will simply write ["television", "sock", ....] and when decrypting it will just read in every other element in the list. This is not proper translation. 
+2) Import an entire dictionary (or another large sample size of unique words) to expand encryption possibilities.
+3) Shuffle the order when writing entries to 'cipher.txt'. 
+4) Have each cipher word be picked at random from the given text dictionary AND be unique (as in non-repeating), otherwise "boathouse" could be equal to "cinnamon" as well as "chairman." This could definitely lead to some potential problems. 
